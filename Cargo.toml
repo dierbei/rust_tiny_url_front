@@ -11,3 +11,12 @@ yew = "0.19"
 
 # 路由
 yew-router = "0.16"
+
+# 轻量级日志库
+log = "0.4.17"
+
+# 打印原代码行数、文件名和消息
+wasm-logger = "0.2"
+
+# 出现 error 时的钩子组件
+console_error_panic_hook = "0.1.7"
