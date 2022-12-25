@@ -8,3 +8,6 @@ edition = "2021"
 [dependencies]
 # webassembly 框架
 yew = "0.19"
+
+# 路由
+yew-router = "0.16"

@@ -1,9 +1,15 @@
 use yew::prelude::*;
+use yew_router::prelude::*;
+use router::{ Route, switch };
+
+mod router;
 
 #[function_component(App)]
 pub fn app() -> Html {
     html! {
-        <h1> { "Hello Yew" } </h1>
+        <BrowserRouter>
+            <Switch <Route> render = { Switch::render(switch) } />
+        </BrowserRouter>
     }
 }
 
