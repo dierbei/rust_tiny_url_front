@@ -20,3 +20,11 @@ wasm-logger = "0.2"
 
 # 出现 error 时的钩子组件
 console_error_panic_hook = "0.1.7"
+
+serde = {version = "1", features = ["derive"]}
+wasm-bindgen-futures = "0.4.30"
+gloo-net = "0.2.4"
+wasm-bindgen = "0.2.67"
+gloo = "0.8"
+gloo-utils = "0.1.5"
+web-sys = "0.3.60"
