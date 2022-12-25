@@ -19,17 +19,15 @@ pub enum Route {
 pub fn switch(route: &Route) -> Html {
     match route {
         Route::Home => html! {
-            <h1>
-                { "Home" }
+            <h1 class="text-3xl font-bold underline">
+                { "Hello world!" }
             </h1>
         },
         Route::Create => html! {
-            <Create>
-            </Create>
+            <Create />
         },
         Route::Links => html! {
-            <Links>
-            </Links>
+            <Links />
         },
     }
 }
