@@ -27,7 +27,7 @@ struct TinyUrl{
 
 #[function_component(TinyUrlProps)]
 fn tiny_url_props() -> Html{
-    const DOMAIN_URL: &str = "http://127.0.0.1:8000/";
+    const DOMAIN_URL: &str = "http://127.0.0.1:8080/";
     let tiny_urls = use_context::<TinyUrls>().expect("no uct");
 
     tiny_urls.tus.iter().map(|t|{

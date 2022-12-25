@@ -1,6 +1,7 @@
 use yew::prelude::*;
 use yew_router::prelude::*;
 
+use crate::pages::LinkTo;
 use crate::pages::Links;
 use crate::pages::Create;
 
@@ -14,6 +15,12 @@ pub enum Route {
 
     #[at("/links")]
     Links,
+
+    #[at("/404")]
+    NotFound,
+
+    #[at("/:code")]
+    LinkTo { code: String },
 }
 
 pub fn switch(route: &Route) -> Html {
@@ -29,5 +36,7 @@ pub fn switch(route: &Route) -> Html {
         Route::Links => html! {
             <Links />
         },
+        Route::LinkTo { code } => html! {<LinkTo code = {code.clone()} />},
+        Route::NotFound => html! {<h1>{"404"}</h1>},
     }
 }
